@@ -5,19 +5,20 @@ include('navBar.php')
 <body class="body">
     <div class="containerSignInAndUp" id="container">
         <div class="formContainer signUpContainer">
-            <form action="#">
+            <form action="formConnexion.php" method="post">
                 <h1>Inscription</h1>
-                <input type="text" placeholder="Prénom" require />
-                <input type="email" placeholder="Email" require />
-                <input type="password" placeholder="Mot de passe" require />
+                <input type="text" name="lastname" placeholder="Nom" require />
+                <input type="text" name="firstname" placeholder="Prénom" require />
+                <input type="email" name="emailInscription" placeholder="Email" require />
+                <input type="password" name="passwordInscription" placeholder="Mot de passe" require />
                 <button class="signUp">S'inscrire</button>
             </form>
         </div>
         <div class="formContainer signInContainer">
-            <form action="#">
+            <form action="formConnexion.php" method="post">
                 <h1>Connexion</h1>
-                <input type="email" placeholder="Email" require />
-                <input type="password" placeholder="Mot de passe" require />
+                <input type="email" name="emailConnexion" placeholder="Email" require />
+                <input type="password" name="passwordConnexion" placeholder="Mot de passe" require />
                 <button class="signIn">Se connecter</button>
             </form>
         </div>
