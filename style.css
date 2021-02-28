@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 4%;
+    padding-top: 70px;
 }
 h1{
     font-weight: bold;
@@ -61,8 +61,7 @@ p{
     margin: 8px 0;
     width: 100%;
 }
-button{
-    border-radius: 20px;
+button, .button{
     border: 1px solid #f3f3f3;
     color: whitesmoke;
     font-size: 12px;
@@ -175,4 +174,20 @@ button.ghostSignIn, button.ghostSignUp{
 }
 .containerSignInAndUp.rightPanelActive .overlayRight{
     transform: translateX(20%);
+}
+
+/* INDEX */
+.bodyIndex{
+    font-family: 'Teko', sans-serif;
+    background: #212121;
+    padding-top: 70px;
+    color: whitesmoke;
+}
+.rowIndex{
+    position: fixed;
+}
+.button:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #749181;
 }
