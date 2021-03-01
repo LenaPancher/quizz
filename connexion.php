@@ -2,7 +2,7 @@
 include('navBar.php')
 ?>
 
-<body class="body">
+<body class="bodyConnexion">
     <div class="containerSignInAndUp" id="container">
         <div class="formContainer signUpContainer">
             <form action="formConnexion.php" method="post">
@@ -38,5 +38,5 @@ include('navBar.php')
         </div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>

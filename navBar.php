@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Quizz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -37,7 +37,7 @@
                         </div>
                     </li>
                     <li class="nav-item mr-2 ml-2">
-                        <a class="nav-link" href="#">A Propos</a>
+                        <a class="nav-link" href="aboutMe.php">A Propos</a>
                     </li>
                     <li class="nav-item  mr-2 ml-2">
                         <a class="nav-link" href="connexion.php">Se connecter</a>
