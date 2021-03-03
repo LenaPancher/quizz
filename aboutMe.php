@@ -34,7 +34,7 @@ include('navbar.php');
                 devenir développeuse full-stack.</p>
         </div>
         <div class="col-3 align-self-center coordonneeAboutMe">
-            <ul>
+            <ul class="text-right">
                 <li>06 06 06 06 06</li>
                 <a href="mailto:lenapancher@gmail.com" target="_blank">
                     <li>lenapancher@gmail.com</li>
@@ -48,66 +48,66 @@ include('navbar.php');
 <section class="container">
     <h1 class="text-center mt-5 mb-5">COMPETENCES</h1>
     <div class="row d-flex">
-        <div class="col-5 align-self-center">
+        <div class="col-6 align-self-center">
             <h2>Langages informatiques</h2>
-            <p>Grâce à des sites de formations en ligne, tel que OpenClassrooms, j'ai pu découvrir, développer et
+            <p>Grâce à mon école, mon entreprise et des sites de formations en ligne, j'ai pu découvrir, développer et
                 acquérir des connaissances sur plusieurs langages.</p>
         </div>
-        <div class="col-7">
-            <div class="skill">
+        <div class="col-6">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>HTML 5</p>
-                    <p>70%</p>
+                    <p>80%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar1"></div>
                 </div>
             </div>
 
-            <div class="skill">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>CSS 3</p>
-                    <p>70%</p>
+                    <p>80%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar2"></div>
                 </div>
             </div>
 
-            <div class="skill">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>JAVA</p>
-                    <p>30%</p>
+                    <p>60%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar3"></div>
                 </div>
             </div>
 
-            <div class="skill">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>JAVASCRIPT</p>
-                    <p>60%</p>
+                    <p>70%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar4"></div>
                 </div>
             </div>
 
-            <div class="skill">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>MySQL</p>
-                    <p>50%</p>
+                    <p>70%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar5"></div>
                 </div>
             </div>
 
-            <div class="skill">
+            <div class="skill ml-auto">
                 <div class="langage">
                     <p>PHP</p>
-                    <p>50%</p>
+                    <p>60%</p>
                 </div>
                 <div class="bar">
                     <div class="progressBar6"></div>
@@ -118,27 +118,18 @@ include('navbar.php');
     </div>
 </section>
 
-<section id="timeline-section" class="container">
+<section id="container">
     <h1 class="text-center mt-5 mb-5">ECOLE ET ENTREPRISE</h1>
-    <div class="timeline-container">
-        <div class="timeline">
-            <ul>
-                <li>
-                    <div class="timeline-content">
-                        <h2 class="date">Septembre 2020 - Septembre 2023</h2>
-                        <h1>Bachelor Développement Web et Mobile en alternance</h1>
-                        <p>Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-content">
-                        <h2 class="date">Octobre 2020 à maintenant</h2>
-                        <h1>Apprentie développeuse</h1>
-                        <p>Helpline</p>
-                        <img>
-                    </div>
-                </li>
-            </ul>
+    <div class="timeline d-flex">
+        <div class="col">
+            <h6>Septembre 2020 - Septembre 2023</h6>
+            <h3>Bachelor Développement Web et Mobile en alternance</h3>
+            <p>Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
+        </div>
+        <div class="col">
+            <h6>Octobre 202 à maintenant</h6>
+            <h3>Apprentie développeuse</h3>
+            <p>Helpline, Nanterre</p>
         </div>
     </div>
 </section>
@@ -226,19 +217,19 @@ include('navbar.php');
         </div>
     </div>
 </section>
-<!-- PROJET -->
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="align-social">
-        <a href="https://github.com/LenaPancher" target="_blanck"><i class="fab fa-github fa-2x space"></i></a>
-        <a href="https://www.linkedin.com/in/lenapancher/" target="_blanck"><i class="fab fa-linkedin fa-2x space"></i></a>
-        <a href="mailto:lenapancher@gmail.com" target="_blanck"><i class="fas fa-envelope fa-2x space"></i></a>
-    </div>
-    <p class="copyright">Copyright - Pancher Léna - ©2020 Tous droits réservés.</p>
-    </p>
+
+<footer class="footer text-center d-flex flex-column">
+        <div class=" align-social">
+            <a href="https://github.com/LenaPancher" target="_blanck"><i class="fab fa-github fa-2x space"></i></a>
+            <a href="https://www.linkedin.com/in/lenapancher/" target="_blanck"><i
+                        class="fab fa-linkedin fa-2x space"></i></a>
+            <a href="mailto:lenapancher@gmail.com" target="_blanck"><i class="fas fa-envelope fa-2x space"></i></a>
+        </div>
+        <div class="">
+            <p class="copyright">Copyright - Pancher Léna - ©2020 Tous droits réservés.</p>
+        </div>
 </footer>
-<!-- FOOTER -->
 
 </body>
 </html>

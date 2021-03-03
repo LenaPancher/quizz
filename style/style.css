@@ -7,10 +7,6 @@
 .bodyConnexion{
     font-family: 'Teko', sans-serif;
     background: #212121;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     padding-top: 70px;
 }
@@ -28,7 +24,7 @@ p{
 }
 
 /* NAVBAR */ 
-.navbar-default{
+.navbar-default, .footer{
     background-color: #191919;
     color: whitesmoke;
 }
@@ -62,7 +58,7 @@ p{
     width: 100%;
 }
 button, .button{
-    border: 1px solid #f3f3f3;
+    border: 1px solid whitesmoke;
     color: whitesmoke;
     font-size: 12px;
     font-weight: bold;
@@ -210,6 +206,10 @@ hr{
     margin: 1%;
 }
 
+.coordonneeAboutMe ul {
+    list-style: none;
+}
+
 .coordonneeAboutMe a{
     color: whitesmoke;
 }
@@ -232,7 +232,7 @@ hr{
 .bar {
     height: 2em;
     width: 450px;
-    background-color: rgb(238, 238, 238);
+    background-color: whitesmoke;
     border-radius: 0.3rem;
 }
 
@@ -245,46 +245,39 @@ hr{
 
 /* BACKGROUND BROWSERS COMPATIBILITIES AND ANIMATIONS */
 .progressBar1 {
-    background: #7f7fd5;
-    background: -webkit-linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
-    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 0.5s;
     animation: mymove1 1s ease forwards;
 }
 
 .progressBar2 {
-    background: #7474bf;
-    background: -webkit-linear-gradient(to bottom, #348ac7, #7474bf);
-    background: linear-gradient(to bottom, #348ac7, #7474bf);
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 1.5s;
     animation: mymove1 1.5s ease forwards;
 }
 .progressBar3 {
-    background: #2980b9;
-    background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
-    background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 1.1s;
-    animation: mymove4 1.5s ease forwards;
+    animation: mymove3 1.5s ease forwards;
 }
 .progressBar4 {
-    background: #457fca;
-    background: -webkit-linear-gradient(to left, #5691c8, #457fca);
-    background: linear-gradient(to left, #5691c8, #457fca);
-
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 1.4s;
     animation: mymove2 1.5s ease forwards;
 }
 .progressBar5 {
-    background: #6190e8;
-    background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
-    background: linear-gradient(to right, #a7bfe8, #6190e8);
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 1.7s;
-    animation: mymove3 1.5s ease forwards;
+    animation: mymove2 1.5s ease forwards;
 }
 .progressBar6 {
-    background: #0575e6;
-    background: -webkit-linear-gradient(to left, #021b79, #0575e6);
-    background: linear-gradient(to left, #021b79, #0575e6);
+    background: -webkit-linear-gradient(to left, #B0BEAA, #749181, #424f49);
+    background: linear-gradient(to left, #B0BEAA, #749181, #424f49);
     animation-delay: 2s;
     animation: mymove3 1.5s ease forwards;
 }
@@ -299,7 +292,7 @@ hr{
     100% {
         top: 0px;
         opacity: 1;
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -312,7 +305,7 @@ hr{
     100% {
         top: 0px;
         opacity: 1;
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -325,19 +318,111 @@ hr{
     100% {
         top: 0px;
         opacity: 1;
-        width: 50%;
+        width: 60%;
     }
 }
 
-@keyframes mymove4 {
-    0% {
-        top: 0px;
-        opacity: 1;
-        width: 0px;
-    }
-    100% {
-        top: 0px;
-        opacity: 1;
-        width: 30%;
-    }
+/* TIMELINE */
+
+
+
+
+
+/* DEBUT PROJET */
+
+.projet-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+/* BLOC DE BASE */
+.bloc-projet {
+    background-color: white;
+    border-radius: 3px;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    text-align: center;
+    line-height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ANIMATION EN ACTIF */
+.bloc-projet:hover {
+    box-shadow: 0 5px 15px -5px #333;
+    transform: translateY(-6px);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXTE BLOC */
+.projet-flex h1 {
+    margin: 0;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: red;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+/* AFFICHAGE IMAGE */
+.bloc-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.projet-flex img {
+    width: 100%;
+    max-height: 150px;
+}
+
+/* AFFICHAGE ET DISPOSITION TEXTE */
+.bloc-text {
+    padding: 15px;
+}
+
+.bloc-tag {
+    color: #000;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.3em;
+    color: #708ee9;
+}
+
+.bloc-titre h4 {
+    color: #000;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.bloc-date {
+    color: #939393;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.bloc-description {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.bloc-auteur {
+    margin-top: 30px;
+    color: #939393;
+    text-align: left;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+/* FIN PROJET */
+
+/* DEBUT FOOTER */
+.footer {
+    width: 100%;
+    height: 100px;
 }

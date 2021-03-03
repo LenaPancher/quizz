@@ -2,7 +2,7 @@
 include('navBar.php')
 ?>
 
-<body class="bodyConnexion">
+<body class="bodyConnexion d-flex flex-column justify-content-center align-items-center">
     <div class="containerSignInAndUp" id="container">
         <div class="formContainer signUpContainer">
             <form action="formConnexion.php" method="post">
