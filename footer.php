@@ -1,5 +1,5 @@
 <footer class="footer position-relative">
-    <div class="copyright">
+    <div class="copyright mt-3 pt-3 pb-3">
         <div class="container">
             <div class="row mb-2">
                 <div class="col-12 text-center">

@@ -12,19 +12,19 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-default fixed-top">
-            <a href="index.php" class="mr-2 ml-5">
+            <a href="index.php" class="mx-5">
                 <img src="img/logo.png" alt="logo" height="60px" width="60px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse mt-2 mb-2 justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse my-2 justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item mr-2 ml-2"> 
+                    <li class="nav-item mx-2">
                         <a class="nav-link active" href="index.php">Accueil</a>
                     </li>
-                    <li class="nav-item dropdown mr-2 ml-2">
+                    <li class="nav-item dropdown mx-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quizz
                         </a>
@@ -36,10 +36,10 @@
                             <a class="dropdown-item" href="#">Test</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 ml-2">
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="aboutMe.php">A Propos</a>
                     </li>
-                    <li class="nav-item  mr-2 ml-2">
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="connexion.php">Se connecter</a>
                     </li>
                 </ul>

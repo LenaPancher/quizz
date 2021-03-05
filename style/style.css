@@ -34,10 +34,6 @@ button, .button{
 .footer {
     z-index: 2;
 }
-.copyright {
-    padding: 20px 0;
-    margin-top: 20px;
-}
 
 /* INDEX */
 .button:hover{
@@ -56,7 +52,6 @@ button, .button{
     background: whitesmoke;
     border-radius: 10px;
     width: 768px;
-    max-width: 100%;
     min-height: 480px;
 }
 .formContainer{
@@ -253,17 +248,11 @@ hr{
     left: 0;
     right: 0
 }
-
-.main-timeline .timeline {
-    margin-bottom: 40px;
-}
-
 .main-timeline .timeline:after {
     content: "";
     display: block;
     clear: both
 }
-
 .main-timeline .icon {
     width: 18px;
     height: 18px;
@@ -273,7 +262,6 @@ hr{
     bottom: 0;
     right: 0
 }
-
 .main-timeline .icon:before, .main-timeline .icon:after {
     content: "";
     width: 100%;
@@ -284,30 +272,21 @@ hr{
     left: 0;
     transition: all 0.33s ease-out 0s
 }
-
 .main-timeline .icon:before {
     background: whitesmoke;
     border: 2px solid #232323;
     left: -3px
 }
-
 .main-timeline .icon:after {
     border: 2px solid #749181;
     left: 3px
 }
-
 .main-timeline .timeline:hover .icon:before {
     left: 3px
 }
-
 .main-timeline .timeline:hover .icon:after {
     left: -3px
 }
-
-.main-timeline .date-content {
-    margin-top: 22px;
-}
-
 .main-timeline .date-content:before {
     content: "";
     width: 36.5%;
@@ -319,14 +298,12 @@ hr{
     right: 10px;
     bottom: 0
 }
-
 .main-timeline .date-outer {
     width: 125px;
     height: 125px;
     font-size: 16px;
     z-index: 1
 }
-
 .main-timeline .date-outer:before, .main-timeline .date-outer:after {
     content: "";
     width: 125px;
@@ -339,66 +316,42 @@ hr{
     right: 0;
     transition: all 0.33s ease-out 0s
 }
-
 .main-timeline .date-outer:before {
     background: whitesmoke;
     border: 2px solid #232323;
     left: -6px
 }
-
 .main-timeline .date-outer:after {
     border: 2px solid #749181;
     left: 6px;
 }
-
 .main-timeline .timeline:hover .date-outer:before {
     left: 6px
 }
-
 .main-timeline .timeline:hover .date-outer:after {
     left: -6px
 }
-
 .main-timeline .date {
-    top: 27%;
+    top: 25%;
     left: 0
 }
-
-.main-timeline .month {
-    font-size: 18px;
-    font-weight: 700;
+.main-timeline .month, .main-timeline .year {
     color: #212121;
 }
-
-.main-timeline .year {
-    font-size: 30px;
-    font-weight: 700;
-    color: #212121;
-    line-height: 36px
-}
-
-.main-timeline .timeline-content {
-    padding: 20px 0 20px 50px;
-}
-
 .main-timeline .title {
     font-weight: 700;
     line-height: 24px;
     margin: 0 0 15px 0
 }
-
 .main-timeline .description {
     margin-bottom: 0
 }
-
 .main-timeline .timeline:nth-child(2n) .date-content {
     float: right
 }
-
 .main-timeline .timeline:nth-child(2n) .date-content:before {
     left: 10px
 }
-
 .main-timeline .timeline:nth-child(2n) .timeline-content {
     padding: 20px 50px 20px 0;
     text-align: right

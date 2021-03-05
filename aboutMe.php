@@ -112,28 +112,28 @@ include('navbar.php');
 <section id="container">
     <h1 class="text-center mt-5 mb-5">ECOLE ET ENTREPRISE</h1>
     <div class="main-timeline position-relative">
-        <div class="timeline position-relative">
+        <div class="timeline position-relative mb-5">
             <div class="icon position-absolute m-auto"></div>
-            <div class="date-content float-left position-relative w-50">
+            <div class="date-content float-left position-relative w-50 mt-3">
                 <div class="date-outer text-center m-auto">
                     <span class="date w-100 m-auto position-absolute">
-                        <span class="month">2020</span>
-                        <span class="year d-block">2023</span>
+                        <span class="month h5 font-weight-bold">2020</span>
+                        <span class="year d-block h2 font-weight-bold">2023</span>
                     </span>
                 </div>
             </div>
-            <div class="timeline-content float-right w-50">
+            <div class="timeline-content float-right w-50 py-4 pl-5">
                 <h5 class="title">Bachelor Développement Web et Mobile en alternance</h5>
                 <p class="description">Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
             </div>
         </div>
-        <div class="timeline position-relative">
+        <div class="timeline position-relative mb-5">
             <div class="icon  position-absolute m-auto"></div>
-            <div class="date-content float-right position-relative w-50">
+            <div class="date-content float-right position-relative w-50 mt-3">
                 <div class="date-outer text-center m-auto">
                 <span class="date w-100 m-auto position-absolute">
-                    <span class="month">Depuis</span>
-                    <span class="year d-block">octobre</span>
+                    <span class="month h5 font-weight-bold">Depuis</span>
+                    <span class="year d-block h2 font-weight-bold">octobre</span>
                 </span>
                 </div>
             </div>
