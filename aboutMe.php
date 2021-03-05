@@ -46,7 +46,7 @@ include('navbar.php');
         </div>
         <div class="col-6">
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>HTML 5</p>
                     <p>80%</p>
                 </div>
@@ -56,7 +56,7 @@ include('navbar.php');
             </div>
 
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>CSS 3</p>
                     <p>80%</p>
                 </div>
@@ -66,7 +66,7 @@ include('navbar.php');
             </div>
 
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>JAVA</p>
                     <p>60%</p>
                 </div>
@@ -76,7 +76,7 @@ include('navbar.php');
             </div>
 
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>JAVASCRIPT</p>
                     <p>70%</p>
                 </div>
@@ -86,7 +86,7 @@ include('navbar.php');
             </div>
 
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>MySQL</p>
                     <p>70%</p>
                 </div>
@@ -96,7 +96,7 @@ include('navbar.php');
             </div>
 
             <div class="skill ml-auto">
-                <div class="langage">
+                <div class="d-flex justify-content-between">
                     <p>PHP</p>
                     <p>60%</p>
                 </div>
@@ -112,32 +112,32 @@ include('navbar.php');
 <section id="container">
     <h1 class="text-center mt-5 mb-5">ECOLE ET ENTREPRISE</h1>
     <div class="main-timeline position-relative">
-        <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-                <div class="date-outer">
-                    <span class="date">
+        <div class="timeline position-relative">
+            <div class="icon position-absolute m-auto"></div>
+            <div class="date-content float-left position-relative w-50">
+                <div class="date-outer text-center m-auto">
+                    <span class="date w-100 m-auto position-absolute">
                         <span class="month">2020</span>
-                        <span class="year">2023</span>
+                        <span class="year d-block">2023</span>
                     </span>
                 </div>
             </div>
-            <div class="timeline-content">
+            <div class="timeline-content float-right w-50">
                 <h5 class="title">Bachelor Développement Web et Mobile en alternance</h5>
                 <p class="description">Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
             </div>
         </div>
-        <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-                <div class="date-outer">
-                <span class="date">
+        <div class="timeline position-relative">
+            <div class="icon  position-absolute m-auto"></div>
+            <div class="date-content float-right position-relative w-50">
+                <div class="date-outer text-center m-auto">
+                <span class="date w-100 m-auto position-absolute">
                     <span class="month">Depuis</span>
-                    <span class="year">octobre</span>
+                    <span class="year d-block">octobre</span>
                 </span>
                 </div>
             </div>
-            <div class="timeline-content">
+            <div class="timeline-content float-right w-50">
                 <h5 class="title">Apprentie développeuse</h5>
                 <p class="description">Helpline, Nanterre</p>
             </div>
@@ -148,17 +148,17 @@ include('navbar.php');
 <section class="container">
     <h1 class="text-center mt-5 mb-5">PROJETS</h1>
     <p class="text-center">Mes projets ont été réalisés en autodidacte suite à l'apprentissage de certains langages.</p>
-    <div class="projet-flex">
-        <div class="bloc-projet">
+    <div class="projet-flex d-flex flex-wrap justify-content-around">
+        <div class="bloc-projet text-center">
             <div class="blog-img">
                 <a href="https://lenapancher.github.io/klia.github.io/" target="_blank"><img src="img/shop.png"></a>
             </div>
-            <div class="bloc-text">
+            <div class="bloc-text text-left">
                 <div class="bloc-tag">
                     <h6><small>HTML - CSS - JAVASCRIPT</small></h6>
                 </div>
                 <div class="bloc-titre">
-                    <h4>E-SHOP</h4>
+                    <h2>E-SHOP</h2>
                 </div>
                 <div class="bloc-date">
                     <p>Septembre 2020</p>
@@ -179,7 +179,7 @@ include('navbar.php');
                     <h6><small>PHP - MySQL</small></h6>
                 </div>
                 <div class="bloc-titre">
-                    <h4>FORUM</h4>
+                    <h2>FORUM</h2>
                 </div>
                 <div class="bloc-date">
                     <p>Juillet 2020</p>
@@ -198,11 +198,11 @@ include('navbar.php');
                 <a href="https://github.com/LenaPancher/JeuPlusOuMoins" target="_blank"><img src="img/plus_ou_moins.png"></a>
             </div>
             <div class="bloc-text">
-                <div class="bloc-tag">
+                <div class="bloc-tag text-left">
                     <h6><small>HTML, CSS, JAVASCRIPT</small></h6>
                 </div>
                 <div class="bloc-titre">
-                    <h4>JUSTE PRIX</h4>
+                    <h2>JUSTE PRIX</h2>
                 </div>
                 <div class="bloc-date">
                     <p>Avril 2020</p>

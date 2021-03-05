@@ -2,8 +2,8 @@
 include('navBar.php');
 ?>
 
-<body class="body">
-<div class="row w-100 d-flex rowIndex p-0">
+<body class="body position-relative">
+<div class="row w-100 d-flex rowIndex p-0 position-fixed">
     <div class="col-4 p-0">
         <img src="img/foret.jpg" alt="foret" class="w-100">
     </div>

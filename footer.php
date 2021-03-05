@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer position-relative">
     <div class="copyright">
         <div class="container">
             <div class="row mb-2">
