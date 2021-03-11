@@ -38,13 +38,13 @@ include('navbar.php');
 
 <section class="container">
     <h1 class="text-center mt-5 mb-5">COMPETENCES</h1>
-    <div class="row d-flex">
-        <div class="col-6 align-self-center">
+    <div class="row d-flex blockSkill">
+        <div class="col-lg-6 col-md-12 align-self-center skillPresentation">
             <h2>Langages informatiques</h2>
             <p>Grâce à mon école, mon entreprise et des sites de formations en ligne, j'ai pu découvrir, développer et
                 acquérir des connaissances sur plusieurs langages.</p>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12 skillLvl">
             <div class="skill ml-auto">
                 <div class="d-flex justify-content-between">
                     <p>HTML 5</p>
@@ -114,7 +114,7 @@ include('navbar.php');
     <div class="main-timeline position-relative">
         <div class="timeline position-relative mb-5">
             <div class="icon position-absolute m-auto"></div>
-            <div class="date-content float-left position-relative w-50 mt-3">
+            <div class="date-content float-left position-relative w-50 mt-3" id="date-content">
                 <div class="date-outer text-center m-auto">
                     <span class="date w-100 m-auto position-absolute">
                         <span class="month h5 font-weight-bold">2020</span>
@@ -123,8 +123,8 @@ include('navbar.php');
                 </div>
             </div>
             <div class="timeline-content float-right w-50 py-4 pl-5">
-                <h5 class="title">Bachelor Développement Web et Mobile en alternance</h5>
-                <p class="description">Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
+                <h5 id="title" class="mb-3 font-weight-bold">Bachelor Développement Web et Mobile en alternance</h5>
+                <p id="description">Coding factory by Itescia, école de la CCI de Paris IDF, Cergy</p>
             </div>
         </div>
         <div class="timeline position-relative mb-5">
@@ -138,7 +138,7 @@ include('navbar.php');
                 </div>
             </div>
             <div class="timeline-content float-right w-50">
-                <h5 class="title">Apprentie développeuse</h5>
+                <h5 class="title mb-3 font-weight-bold">Apprentie développeuse</h5>
                 <p class="description">Helpline, Nanterre</p>
             </div>
         </div>
@@ -149,11 +149,11 @@ include('navbar.php');
     <h1 class="text-center mt-5 mb-5">PROJETS</h1>
     <p class="text-center">Mes projets ont été réalisés en autodidacte suite à l'apprentissage de certains langages.</p>
     <div class="projet-flex d-flex flex-wrap justify-content-around">
-        <div class="bloc-projet text-center">
+        <div class="bloc-projet text-center m-3">
             <div class="blog-img">
-                <a href="https://lenapancher.github.io/klia.github.io/" target="_blank"><img src="img/shop.png"></a>
+                <a href="https://lenapancher.github.io/klia.github.io/" target="_blank"><img class="w-100" src="img/shop.png"></a>
             </div>
-            <div class="bloc-text text-left">
+            <div class="bloc-text text-left p-4">
                 <div class="bloc-tag">
                     <h6><small>HTML - CSS - JAVASCRIPT</small></h6>
                 </div>
@@ -170,11 +170,11 @@ include('navbar.php');
             </div>
         </div>
 
-        <div class="bloc-projet">
+        <div class="bloc-projet m-3">
             <div class="blog-img">
-                <a href="https://github.com/LenaPancher/Forum" target="_blank"><img src="img/forum.png"></a>
+                <a href="https://github.com/LenaPancher/Forum" target="_blank"><img class="w-100" src="img/forum.png"></a>
             </div>
-            <div class="bloc-text">
+            <div class="bloc-text p-4">
                 <div class="bloc-tag">
                     <h6><small>PHP - MySQL</small></h6>
                 </div>
@@ -193,11 +193,11 @@ include('navbar.php');
             </div>
         </div>
 
-        <div class="bloc-projet">
+        <div class="bloc-projet m-3">
             <div class="blog-img">
-                <a href="https://github.com/LenaPancher/JeuPlusOuMoins" target="_blank"><img src="img/plus_ou_moins.png"></a>
+                <a href="https://github.com/LenaPancher/JeuPlusOuMoins" target="_blank"><img class="w-100" src="img/plus_ou_moins.png"></a>
             </div>
-            <div class="bloc-text">
+            <div class="bloc-text p-4">
                 <div class="bloc-tag text-left">
                     <h6><small>HTML, CSS, JAVASCRIPT</small></h6>
                 </div>

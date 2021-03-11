@@ -165,7 +165,7 @@ hr{
 /* Competences */
 .skill {
     width: fit-content;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px 10px 0;
 }
 
 /* Progress bar */
@@ -201,38 +201,65 @@ hr{
 /* CSS animations with @keyframes */
 @keyframes mymove1 {
     0% {
-        top: 0px;
+        top: 0;
         opacity: 1;
-        width: 0px;
+        width: 0;
     }
     100% {
-        top: 0px;
+        top: 0;
         opacity: 1;
         width: 80%;
     }
 }
 @keyframes mymove2 {
     0% {
-        top: 0px;
+        top: 0;
         opacity: 1;
-        width: 0px;
+        width: 0;
     }
     100% {
-        top: 0px;
+        top: 0;
         opacity: 1;
         width: 70%;
     }
 }
 @keyframes mymove3 {
     0% {
-        top: 0px;
+        top: 0;
         opacity: 1;
-        width: 0px;
+        width: 0;
     }
     100% {
-        top: 0px;
+        top: 0;
         opacity: 1;
         width: 60%;
+    }
+}
+/* RESPONSIVE FOR SCREENS < 1040px */
+@media screen and (max-width: 991px) {
+    .skillPresentation {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .skillPresentation h2 {
+        padding-left: 0%;
+        padding-bottom: 20px;
+    }
+    .skill {
+        width: 100%;
+    }
+    .bar {
+        height: 2em;
+        width: 100%;
+        background-color: rgb(238, 238, 238);
+        border-radius: 0.3rem;
+    }
+    .progressBar1, .progressBar2, .progressBar3, .progressBar4, .progressBar5, .progressBar6 {
+        width: 100%;
+        height: 2em;
+        border-radius: 0.3rem;
+        opacity: 0;
     }
 }
 
@@ -338,17 +365,6 @@ hr{
 .main-timeline .month, .main-timeline .year {
     color: #212121;
 }
-.main-timeline .title {
-    font-weight: 700;
-    line-height: 24px;
-    margin: 0 0 15px 0
-}
-.main-timeline .description {
-    margin-bottom: 0
-}
-.main-timeline .timeline:nth-child(2n) .date-content {
-    float: right
-}
 .main-timeline .timeline:nth-child(2n) .date-content:before {
     left: 10px
 }
@@ -358,82 +374,22 @@ hr{
 }
 
 @media only screen and (max-width: 991px) {
-    .main-timeline .date-content {
-        margin-top: 35px
+    .main-timeline #title {
+        width: inherit;
     }
-    .main-timeline .date-content:before {
-        width: 22.5%
+    .main-timeline #description {
+        width: inherit;
     }
-    .main-timeline .timeline-content {
-        padding: 10px 0 10px 30px
-    }
-    .main-timeline .title {
-        font-size: 17px
-    }
-    .main-timeline .timeline:nth-child(2n) .timeline-content {
-        padding: 10px 30px 10px 0
+    .main-timeline #date-content:before{
+        top: 6px;
     }
 }
-
-@media only screen and (max-width: 767px) {
-    .main-timeline:before {
-        margin: 0;
-        left: 7px
-    }
-    .main-timeline .timeline {
-        margin-bottom: 20px
-    }
-    .main-timeline .timeline:last-child {
-        margin-bottom: 0
-    }
-    .main-timeline .icon {
-        margin: auto 0
-    }
-    .main-timeline .date-content {
-        width: 95%;
-        float: right;
-        margin-top: 0
-    }
-    .main-timeline .date-content:before {
-        display: none
-    }
-    .main-timeline .date-outer {
-        width: 110px;
-        height: 110px
-    }
-    .main-timeline .date-outer:before,
-    .main-timeline .date-outer:after {
-        width: 110px;
-        height: 110px
-    }
-    .main-timeline .date {
-        top: 30%;
-    }
-    .main-timeline .year {
-        font-size: 24px
-    }
-    .main-timeline .timeline-content,
-    .main-timeline .timeline:nth-child(2n) .timeline-content {
-        width: 95%;
-        text-align: center;
-        padding: 10px 0
-    }
-    .main-timeline .title {
-        margin-bottom: 10px
-    }
-}
-
 
 /* Projet */
-.projet-flex {
-    padding-bottom: 20px;
-}
 .bloc-projet {
     background-color: #394741;
     width: 300px;
     height: 450px;
-    margin: 20px;
-    line-height: 1em;
     transition: all 0.3s ease-in-out;
 }
 .bloc-projet:hover {
@@ -443,15 +399,9 @@ hr{
     object-fit: cover;
 }
 .projet-flex img {
-    width: 100%;
     max-height: 150px;
-}
-.bloc-text {
-    padding: 15px;
 }
 .bloc-tag, .bloc-date {
     letter-spacing: 1px;
     color: #B0BEAA;
-    padding-bottom: 3px;
-    padding-top: 3px;
 }
