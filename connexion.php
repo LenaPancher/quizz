@@ -38,5 +38,5 @@ include('navBar.php')
     </div>
 </div>
 
-<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/connexion.js"></script>
 </body>

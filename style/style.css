@@ -24,13 +24,11 @@ button, .button{
     color: whitesmoke;
 }
 
-/* NAVBAR */ 
+/* NAVBAR ET FOOTER */
 .navbar-default, .footer{
     background-color: #191919;
     color: whitesmoke;
 }
-
-/* FOOTER */
 .footer {
     z-index: 2;
 }
@@ -42,7 +40,7 @@ button, .button{
     background-color: #749181;
 }
 
-/* CONNEXION / INSCRIPTION */
+/* CONNEXION / INSCRIPTION / DECONNEXION */
 .bodyConnexion{
     background: #212121;
     height: 100vh;
@@ -142,6 +140,10 @@ button.ghostSignIn, button.ghostSignUp{
 }
 .containerSignInAndUp.rightPanelActive .overlayRight{
     transform: translateX(20%);
+}
+.coAndDeco {
+    background-color: #749181;
+    border-radius:100px;
 }
 
 /* ABOUT ME */
@@ -404,4 +406,18 @@ hr{
 .bloc-tag, .bloc-date {
     letter-spacing: 1px;
     color: #B0BEAA;
+}
+
+/* DASHBOARD */
+.btnDashboard{
+    color: whitesmoke;
+    background: #212121;
+    border: #212121;
+}
+.blocDashBoard {
+    background-color: #394741;
+    transition: all 0.3s ease-in-out;
+}
+.blocDashBoard:hover {
+    transform: translateY(-4px);
 }

@@ -5,7 +5,7 @@ include('navbar.php');
 <body class="body">
 
 <section class="headerAboutMe container-fluid p-0 d-flex text-center">
-    <div class="row mt-5 mb-5 w-100">
+    <div class="row my-5 w-100">
         <div class="col-7 align-self-center">
             <h1>Pancher Léna</h1>
             <hr/>
@@ -223,4 +223,3 @@ include("footer.php");
 ?>
 
 </body>
-</html>
