@@ -1,4 +1,4 @@
 //Pour masquer la division :
-document.getElementById("display").style.display = none;
+document.getElementsByClassName("display").style.visibility = none;
 ///Pour afficher la division :
-document.getElementById("display").style.display = block;
+//document.getElementsByClassName("display").style.display = block;
