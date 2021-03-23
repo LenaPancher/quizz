@@ -8,7 +8,7 @@ include('choiceDashboard.php');
 <section class="container p-0">
     <div class="row my-5">
         <!-- Partie Quiz -->
-        <div class="col-4 text-center">
+        <div class="col-4 text-center" id="quiz">
             <div>
                 <h3>
                     <img src="img/testing.png" width="10%" class="mr-3">
@@ -16,29 +16,16 @@ include('choiceDashboard.php');
                             aria-haspopup="true" aria-expanded="false">Quiz
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Ajouter</a>
-                        <a class="dropdown-item" href="#">Modifier</a>
-                        <a class="dropdown-item" href="#">Supprimer</a>
+                        <a class="dropdown-item" href="#" id="addQuiz">Ajouter</a>
+                        <a class="dropdown-item" href="#" id="modifyQuiz">Modifier</a>
+                        <a class="dropdown-item" href="#" id="deleteQuiz">Supprimer</a>
                     </div>
                 </h3>
                 <p>Nombre de quiz : <?php echo nb('quiz') ?></p>
             </div>
 
             <!-- Ajouter / Modifier / Supprimer -->
-            <div class="addQuiz mt-5 py-4 blocDashBoard display">
-                <h4 class="mb-4">Ajouter un quiz</h4>
-                <form method="post" action="formDashboard.php">
-                    <input type="text" name="addNameQuiz" placeholder="Nom du quiz" required> <br><br>
-                    <p class="">Catégorie :
-                        <select name="id_category">
-                            <?php choiceCategory(); ?>
-                        </select>
-                    </p>
-                    <br>
-                    <input type="submit" class="btn btn-light" value="Ajouter">
-                </form>
-            </div>
-            <div class="modifyQuiz mt-5 py-4 blocDashBoard display">
+            <div class="modifyQuiz mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Modifier un quiz</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Quiz :
@@ -56,7 +43,7 @@ include('choiceDashboard.php');
                     <input type="submit" class="btn btn-light" value="Modifier">
                 </form>
             </div>
-            <div class="deleteQuiz mt-5 py-4 blocDashBoard display">
+            <div class="deleteQuiz mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Supprimer un quiz</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Quiz :
@@ -88,7 +75,7 @@ include('choiceDashboard.php');
             </div>
 
             <!-- Ajouter / Modifier / Supprimer -->
-            <div class="addCategory mt-5 py-4 blocDashBoard display">
+            <div class="addCategory mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Ajouter une catégorie</h4>
                 <form method="post" action="formDashboard.php">
                     <input type="text" name="addNameCategory" placeholder="Nom de la catégorie" required> <br><br>
@@ -96,7 +83,7 @@ include('choiceDashboard.php');
                     <input type="submit" class="btn btn-light" value="Ajouter">
                 </form>
             </div>
-            <div class="modifyCategory mt-5 py-4 blocDashBoard display">
+            <div class="modifyCategory mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Modifier une catégorie</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Catégorie :
@@ -109,7 +96,7 @@ include('choiceDashboard.php');
                     <input type="submit" class="btn btn-light" value="Modifier"</input>
                 </form>
             </div>
-            <div class="deleteQuiz mt-5 py-4 blocDashBoard display">
+            <div class="deleteQuiz mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Supprimer une catégorie</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Catégorie :
@@ -140,7 +127,7 @@ include('choiceDashboard.php');
             </div>
 
             <!-- Modifier / Supprimer -->
-            <div class="modifyUser mt-5 py-4 blocDashBoard display">
+            <div class="modifyUser mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Modifier le status</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Utilisateur :
@@ -157,7 +144,7 @@ include('choiceDashboard.php');
                     <input type="submit" class="btn btn-light" value="Modifier">
                 </form>
             </div>
-            <div class="deleteUser mt-5 py-4 blocDashBoard display">
+            <div class="deleteUser mt-5 py-4 blocDashBoard">
                 <h4 class="mb-4">Supprimer un utilisateur</h4>
                 <form method="post" action="formDashboard.php">
                     <p class="">Utilisateur :
